@@ -1,5 +1,5 @@
 <?php
-session_start();
+ session_start();
 header("Content-type: image/png");
 
 $imagemCaptcha = imagecreatefrompng("img/captcha.png") or die("não foi possí­vel inicializar uma nova imagem");;
@@ -30,12 +30,11 @@ imagedestroy($imagemCaptcha);
 
         // define a palavra conforme a quantidade de letras definidas no parametro
         $quantidade_letras
-        $palavra = substr(str_shuffle("AaBbCcDdEeFfGgHhIiJjKkLlMmNnPpQq
-        RrSsTtUuVvYyXxWwZz23456789"),0,($quantidade_letras));
+       $palavra = substr(str_shuffle("AaBbCcDdEeFfGgHhIiJjKkLlMmNnPpQqRrSsTtUuVvYyXxWwZz23456789"),0,($quantidade_letras));
         $_SESSION["palavra"] = $palavra; // atribui para a sessao a palavra gerada
         for($i = 1; $i <= $quantidade_letras; $i++){
             imagettftext($imagem,$tamanho_fonte,rand(-25,25),($tamanho_fonte*$i),
-            ($tamanho_fonte + 10),$branco,$fonte,substr($palavra,($i-1),1));
+            ($tamanho_fonte + 10),$branco,$fonte,substr($palavra,($i-1),1)); 
             // atribui as letras a imagem
         }
         imagejpeg($imagem); // gera a imagem

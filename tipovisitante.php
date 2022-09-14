@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="css/stylesisconv.css"> 
    
 </head>
-<style>
-	
-</style>
 
 <body>
 
@@ -19,16 +16,18 @@
 <div class="sisconv">Sisconv</div>
 <div class="wrapper">
 	<div class="container">
-	
+            
+	<form action="codTipoVisitante.php" method="GET"/>
     <div class="formlist"><h1><a>Cadastro Visita</a></h1><form action="/action_page.php">
   <label for="origemdovisitante">Origem visitante:</label>
-  <select name="visitantes" id="visitantes">
-      <option value="pm">Policial Militar</option>
-      <option value="civil">Civil</option>
-      <option value="empresa">Empresa</option>
-      <option value="outras">Outras Instituições</option>
+  
+  <select name="PMCEO" id="visitantes">
+      <option name="PMCEO" value="pm">Policial Militar</option>
+      <option name="PMCEO" value="civil">Civil</option>
+      <option name="PMCEO" value="empresa">Empresa</option>
+      <option name="PMCEO" value="outras">Outras Instituições</option>
   </select><br><br><br>
-  <form action="?" method="POST"><input type="submit" value="Cadastrar Visitante"></form></div>
+  <input type="submit" value="Cadastrar Visitante"></form></div>
  
   </div>
 
