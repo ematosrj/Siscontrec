@@ -14,7 +14,7 @@
 
 <body>
 <div class="img"><img src="http://sisgeap.sistemas.pm.ba.gov.br/images/PMBA.png" alt="logopm"></div>
-<div class="sisconv">Sisconv</div>
+<div class="sisconv">Siscontrec</div>
 <div class="container">
 <div class="formcontainer">
 <div class="formlist"><a>Cadastro Visita</a><form action="/action_page.php"><br>
